@@ -14,6 +14,8 @@ public class App {
 
     public static void main(String[] args) {
         // invoke instances from 3-tier architecture packages
+
+        // Here's the bootstrapping
         // repository layer
         ConcreteRepository repository = new ConcreteRepository();
 
