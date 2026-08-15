@@ -1,5 +1,8 @@
 # Simple HttpServer
-A simple server-side application with a database.
+A simple server-side application with a database. 
+I am developing this project for learning purpose.
+This project is under development.
+
 
 ## Features
 - Accept HTTP Request
