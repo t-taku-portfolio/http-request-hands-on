@@ -43,3 +43,8 @@ expected result, actual result, pass/fail
 - To implement a simple server.
 - To show the result on a browser based on requests.
 - To implement a dispatcher that creates contexts based on the request’s URI path.
+
+## RoadMap
+- Define a controller interface
+- Modify the routing map so that the router selects a controller instance.
+- Implement the controller that parse JSON and get the HttpExchange instance.
