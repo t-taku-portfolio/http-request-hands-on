@@ -1,4 +1,5 @@
 io/github/t_taku_portfolio/service/ConcreteService.class
+io/github/t_taku_portfolio/controller/JsonUtil.class
 io/github/t_taku_portfolio/App.class
 io/github/t_taku_portfolio/model/StudentResponseDTO.class
 io/github/t_taku_portfolio/model/Validator.class
