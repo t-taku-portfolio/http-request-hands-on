@@ -41,7 +41,9 @@ public class Dispatcher implements HttpHandler {
         Optional<Supplier<Controller>> optional = router.resolve(dto.path());
         if(optional.isPresent()) {
 
+            // invoke the handle method of controller
             optional.get().get().handle(exchange, dto);
+
             // If the client requests JSON, response students JSON
             statusCode = isStatusOk ? 200 : 405 ;
             responseBuilder.append(service.getJson());

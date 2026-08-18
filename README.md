@@ -48,3 +48,5 @@ expected result, actual result, pass/fail
 - Define a controller interface
 - [Done] Modify the routing map so that the router selects a controller instance.
 - Implement the controller that parse JSON and get the HttpExchange instance.
+- Move the mapping DTO logic from Service layer to Controller layer.
+- Implement request body field in RequestDTO record class.
