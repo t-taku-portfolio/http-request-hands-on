@@ -21,7 +21,7 @@ public class Router {
         return INSTANCE;
     }
 
-    public Optional<Controller> resolve(String path) {
+    public Optional<Supplier<Controller>> resolve(String path) {
         if(path == null) return Optional.empty();
 
         String theKey = path;
@@ -31,6 +31,7 @@ public class Router {
 
         Supplier<Controller> supplier = routingTable.get(theKey);
 
-        return Optional.of(supplier.get());
+        // return a supplier that can contain null object if the path is not found
+        return Optional.ofNullable(supplier);
     }
 }

@@ -5,6 +5,6 @@ import io.github.t_taku_portfolio.model.StudentRequestDTO;
 
 import java.io.IOException;
 
-public interface Controller {
+interface Controller {
     public void handle(HttpExchange httpExchange, StudentRequestDTO dto) throws IOException;
 }
