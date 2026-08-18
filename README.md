@@ -45,8 +45,11 @@ expected result, actual result, pass/fail
 - To implement a dispatcher that creates contexts based on the request’s URI path.
 
 ## RoadMap
-- Define a controller interface
+- [Done] Define a controller interface
 - [Done] Modify the routing map so that the router selects a controller instance.
 - Implement the controller that parse JSON and get the HttpExchange instance.
 - Move the mapping DTO logic from Service layer to Controller layer.
-- Implement request body field in RequestDTO record class.
+- ~~Implement request body field in RequestDTO record class.~~
+- Change controllers to singleton.
+- Change DI from Dispatcher to controllers in App class.
+- Change the logic of the suplier interface from new instance to get instance
