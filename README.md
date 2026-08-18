@@ -46,5 +46,5 @@ expected result, actual result, pass/fail
 
 ## RoadMap
 - Define a controller interface
-- Modify the routing map so that the router selects a controller instance.
+- [Done] Modify the routing map so that the router selects a controller instance.
 - Implement the controller that parse JSON and get the HttpExchange instance.
