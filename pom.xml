@@ -83,6 +83,16 @@
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.4.2</version>
+
+          <configuration>
+            <archive>
+              <manifest>
+                <addClasspath>true</addClasspath>
+                <mainClass>io.github.t_taku_portfolio.App</mainClass>
+              </manifest>
+            </archive>
+          </configuration>
+
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
