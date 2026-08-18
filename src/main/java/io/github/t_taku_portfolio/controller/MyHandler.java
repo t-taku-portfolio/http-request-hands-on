@@ -2,7 +2,7 @@ package io.github.t_taku_portfolio.controller;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
-import io.github.t_taku_portfolio.model.StudentRequestDTO;
+import io.github.t_taku_portfolio.model.RequestDTO;
 import io.github.t_taku_portfolio.service.Service;
 
 import java.io.IOException;
@@ -24,7 +24,7 @@ public class MyHandler implements HttpHandler {
         StringBuilder responseBuilder = new StringBuilder();
 
         // 1. input request data into DTO
-        StudentRequestDTO requestDTO = new StudentRequestDTO(
+        RequestDTO requestDTO = new RequestDTO(
                 exchange.getRequestMethod(),
                 exchange.getRequestHeaders().getFirst("Content-Type"),
                 exchange.getRequestURI().normalize().getPath()

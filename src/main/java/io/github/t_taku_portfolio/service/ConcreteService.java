@@ -1,10 +1,10 @@
 package io.github.t_taku_portfolio.service;
 
-import io.github.t_taku_portfolio.model.StudentRequestDTO;
+import io.github.t_taku_portfolio.model.RequestDTO;
 import io.github.t_taku_portfolio.repository.ConcreteRepository;
 
 public class ConcreteService implements Service{
-    private StudentRequestDTO dto;
+    private RequestDTO dto;
     private ConcreteRepository repository;
 
     public ConcreteService(ConcreteRepository theRepository){
@@ -13,7 +13,7 @@ public class ConcreteService implements Service{
     }
 
     @Override
-    public void setDTO(StudentRequestDTO theDTO) {
+    public void setDTO(RequestDTO theDTO) {
         this.dto = theDTO;
     }
 

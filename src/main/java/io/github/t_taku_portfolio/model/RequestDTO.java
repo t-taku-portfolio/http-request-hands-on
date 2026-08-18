@@ -1,11 +1,11 @@
 package io.github.t_taku_portfolio.model;
 
-public record StudentRequestDTO(
+public record RequestDTO(
         String method,
         String contentType,
         String path
 ) {
-    public StudentRequestDTO {
+    public RequestDTO {
         Validator.validatePath(path);
         Validator.validateMethod(method);
     }

@@ -1,11 +1,11 @@
 package io.github.t_taku_portfolio.model;
 
-public record StudentResponseDTO(
+public record ResponseDTO(
         String name,
         int year,
         String major
 ) {
-    public StudentResponseDTO {
+    public ResponseDTO {
 
         // validate name
         Validator.validateStudentName(name);

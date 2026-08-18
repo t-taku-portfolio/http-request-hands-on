@@ -1,7 +1,7 @@
 package io.github.t_taku_portfolio.controller;
 
 import com.sun.net.httpserver.HttpExchange;
-import io.github.t_taku_portfolio.model.StudentRequestDTO;
+import io.github.t_taku_portfolio.model.RequestDTO;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -9,12 +9,12 @@ import java.nio.charset.StandardCharsets;
 
 public class ResponseContext {
 
-    private final StudentRequestDTO dto;
+    private final RequestDTO dto;
     private final HttpExchange exchange;
     private final String method;
     private final String path;
 
-    public ResponseContext(HttpExchange theHttpExchange, StudentRequestDTO theDto) {
+    public ResponseContext(HttpExchange theHttpExchange, RequestDTO theDto) {
         this.dto = theDto;
         this.exchange = theHttpExchange;
         this.method = dto.method();
