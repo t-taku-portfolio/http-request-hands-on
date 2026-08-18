@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class StudentsController implements Controller {
     @Override
-    public void handle(HttpExchange httpExchange, RequestDTO dto) throws IOException {
+    public void handle(HttpExchange httpExchange) throws IOException {
         // business logic here
 
         // extract the request body as a JSON file using Jackson library

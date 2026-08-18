@@ -6,5 +6,5 @@ import io.github.t_taku_portfolio.model.RequestDTO;
 import java.io.IOException;
 
 public interface Controller {
-    void handle(HttpExchange httpExchange, RequestDTO dto) throws IOException;
+    void handle(HttpExchange httpExchange) throws IOException;
 }

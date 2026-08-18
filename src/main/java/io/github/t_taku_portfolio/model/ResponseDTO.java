@@ -10,12 +10,12 @@ public record ResponseDTO(
         // validate name
         Validator.validateStudentName(name);
 
-        // validatePath years
+        // validate years
         if(year > 6 || year < 1) {
             throw new IllegalArgumentException("invalid year");
         }
 
-        // validatePath major
+        // validate major
         if(major.isBlank()) {
             throw new IllegalArgumentException("major is blank");
         }
