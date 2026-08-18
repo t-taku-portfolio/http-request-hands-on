@@ -1,8 +1,10 @@
 io/github/t_taku_portfolio/service/ConcreteService.class
+io/github/t_taku_portfolio/model/RequestDTO.class
+io/github/t_taku_portfolio/controller/JsonUtil.class
 io/github/t_taku_portfolio/App.class
-io/github/t_taku_portfolio/model/StudentResponseDTO.class
 io/github/t_taku_portfolio/model/Validator.class
 io/github/t_taku_portfolio/controller/MyHandler.class
+io/github/t_taku_portfolio/model/ResponseDTO.class
 io/github/t_taku_portfolio/controller/Controller.class
 io/github/t_taku_portfolio/service/Service.class
 io/github/t_taku_portfolio/controller/Dispatcher.class
@@ -13,4 +15,3 @@ io/github/t_taku_portfolio/repository/ConcreteRepository.class
 io/github/t_taku_portfolio/controller/Router.class
 io/github/t_taku_portfolio/repository/Repository.class
 io/github/t_taku_portfolio/controller/StudentsController.class
-io/github/t_taku_portfolio/model/StudentRequestDTO.class

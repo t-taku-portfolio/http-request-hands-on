@@ -1,9 +1,9 @@
 package io.github.t_taku_portfolio.service;
 
-import io.github.t_taku_portfolio.model.StudentRequestDTO;
+import io.github.t_taku_portfolio.model.RequestDTO;
 
 public interface Service {
-    public void setDTO(StudentRequestDTO theDTO);
+    public void setDTO(RequestDTO theDTO);
     public boolean validateRequest();
     public boolean isJson();
     public String getJson();

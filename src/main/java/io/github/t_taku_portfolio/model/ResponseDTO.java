@@ -1,21 +1,21 @@
 package io.github.t_taku_portfolio.model;
 
-public record StudentResponseDTO(
+public record ResponseDTO(
         String name,
         int year,
         String major
 ) {
-    public StudentResponseDTO {
+    public ResponseDTO {
 
         // validate name
         Validator.validateStudentName(name);
 
-        // validatePath years
+        // validate years
         if(year > 6 || year < 1) {
             throw new IllegalArgumentException("invalid year");
         }
 
-        // validatePath major
+        // validate major
         if(major.isBlank()) {
             throw new IllegalArgumentException("major is blank");
         }

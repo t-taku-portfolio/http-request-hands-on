@@ -2,7 +2,7 @@ package io.github.t_taku_portfolio.controller;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
-import io.github.t_taku_portfolio.model.StudentRequestDTO;
+import io.github.t_taku_portfolio.model.RequestDTO;
 import io.github.t_taku_portfolio.service.Service;
 
 import java.io.IOException;
@@ -26,7 +26,7 @@ public class Dispatcher implements HttpHandler {
         StringBuilder responseBuilder = new StringBuilder();
         String contentType;
 
-        StudentRequestDTO dto = new StudentRequestDTO(
+        RequestDTO dto = new RequestDTO(
                 exchange.getRequestMethod(),
                 exchange.getRequestHeaders().getFirst("Content-Type"),
                 exchange.getRequestURI().normalize().getPath()
@@ -42,7 +42,7 @@ public class Dispatcher implements HttpHandler {
         if(optional.isPresent()) {
 
             // invoke the handle method of controller
-            optional.get().get().handle(exchange, dto);
+            optional.get().get().handle(exchange);
 
             // If the client requests JSON, response students JSON
             statusCode = isStatusOk ? 200 : 405 ;
