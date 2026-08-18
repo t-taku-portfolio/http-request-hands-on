@@ -25,6 +25,7 @@ public class App {
         // controller layer
         // MyHandler studentsHandler = new MyHandler(service);
         Dispatcher dispatcher = new Dispatcher(service);
+        StudentsController.initialize(service);
 
         // set IP address to connect
         InetAddress ipAddress = InetAddress.getLoopbackAddress();
