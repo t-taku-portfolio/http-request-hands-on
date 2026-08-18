@@ -16,6 +16,7 @@ public class Dispatcher implements HttpHandler {
     public Dispatcher(Service theService) {
         this.service = theService;
         router = Router.getInstance();
+        System.out.println("in constructor: " + getClass().getSimpleName());
     }
 
 
@@ -40,6 +41,7 @@ public class Dispatcher implements HttpHandler {
         Optional<Supplier<Controller>> optional = router.resolve(dto.path());
         if(optional.isPresent()) {
 
+            optional.get().get().handle(exchange, dto);
             // If the client requests JSON, response students JSON
             statusCode = isStatusOk ? 200 : 405 ;
             responseBuilder.append(service.getJson());
