@@ -6,6 +6,8 @@ import io.github.t_taku_portfolio.model.StudentRequestDTO;
 import io.github.t_taku_portfolio.service.Service;
 
 import java.io.IOException;
+import java.util.Optional;
+import java.util.function.Supplier;
 
 public class Dispatcher implements HttpHandler {
     private final Service service;
@@ -35,7 +37,8 @@ public class Dispatcher implements HttpHandler {
 
 
         // dispatch the exchange to contexts based on the path
-        if(router.resolve(dto.path()).orElse("").equals("StudentsController")) {
+        Optional<Supplier<Controller>> optional = router.resolve(dto.path());
+        if(optional.isPresent()) {
 
             // If the client requests JSON, response students JSON
             statusCode = isStatusOk ? 200 : 405 ;
