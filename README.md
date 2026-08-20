@@ -11,7 +11,7 @@ This project is under development.
 - Validate Path and the information of students
 
 ## Stack
-- [Java SE21](https://www.oracle.com/java/technologies/downloads/#java21)
+- [Java SE25](https://www.oracle.com/java/technologies/downloads/#java21)
 - [Apache Maven 3.9.11](https://maven.apache.org/download.cgi)
 - [Jackson-Databind](https://mvnrepository.com/artifact/tools.jackson.core/jackson-databind)
 
