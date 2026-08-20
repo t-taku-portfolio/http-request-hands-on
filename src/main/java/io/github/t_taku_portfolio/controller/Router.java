@@ -12,9 +12,10 @@ public class Router {
     private final Map<String, Supplier<Controller> > routingTable = new HashMap<>();
 
     private Router() {
+        // The following code was moved to App class
         // the controller name is sample
         // need to rename the corresponding controller name
-        routingTable.put("/students", StudentsController::new);
+        // routingTable.put("/students", StudentsController::new);
     }
 
     public static Router getInstance() {
@@ -33,5 +34,9 @@ public class Router {
 
         // return a supplier that can contain null object if the path is not found
         return Optional.ofNullable(supplier);
+    }
+
+    public void addRoute(String path, Supplier<Controller> supplier) {
+        routingTable.put(path, supplier);
     }
 }

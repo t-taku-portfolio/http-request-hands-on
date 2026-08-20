@@ -9,6 +9,7 @@ import io.github.t_taku_portfolio.service.Service;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
+import java.util.function.Supplier;
 
 public class App {
 
@@ -25,7 +26,10 @@ public class App {
         // controller layer
         // MyHandler studentsHandler = new MyHandler(service);
         Dispatcher dispatcher = new Dispatcher(service);
-        StudentsController.initialize(service);
+        StudentsController studentsController = new StudentsController(service);
+
+        Router routingTable = Router.getInstance();
+        routingTable.addRoute("/students", () -> studentsController);
 
         // set IP address to connect
         InetAddress ipAddress = InetAddress.getLoopbackAddress();
