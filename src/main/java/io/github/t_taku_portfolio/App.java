@@ -9,7 +9,6 @@ import io.github.t_taku_portfolio.service.Service;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
-import java.util.function.Supplier;
 
 public class App {
 
