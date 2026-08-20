@@ -7,10 +7,9 @@ import io.github.t_taku_portfolio.service.Service;
 import java.io.IOException;
 
 public class StudentsController implements Controller {
-    private static StudentsController instance;
     private final Service service;
 
-    private StudentsController(Service theService) {
+    public StudentsController(Service theService) {
         this.service = theService;
     }
 
@@ -30,11 +29,9 @@ public class StudentsController implements Controller {
         );
     }
 
-    public static void initialize(Service theService) {
-        if(instance == null) instance = new StudentsController(theService);
-    }
-
+    /*
     public static StudentsController getInstance() {
         return instance;
     }
+    */
 }

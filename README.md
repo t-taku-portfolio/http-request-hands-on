@@ -11,7 +11,7 @@ This project is under development.
 - Validate Path and the information of students
 
 ## Stack
-- [Java SE21](https://www.oracle.com/java/technologies/downloads/#java21)
+- [Java SE25](https://www.oracle.com/java/technologies/downloads/#java21)
 - [Apache Maven 3.9.11](https://maven.apache.org/download.cgi)
 - [Jackson-Databind](https://mvnrepository.com/artifact/tools.jackson.core/jackson-databind)
 
@@ -50,6 +50,7 @@ expected result, actual result, pass/fail
 - Implement the controller that parse JSON and get the HttpExchange instance.
 - Move the mapping DTO logic from Service layer to Controller layer.
 - ~~Implement request body field in RequestDTO record class.~~
-- [Done] Change controllers to singleton.
+- ~~[Done] Change controllers to singleton.~~
 - [Done] Change DI from Dispatcher to controllers in App class.
-- Change the logic of the suplier interface from new instance to get instance
+- ~~Change the logic of the supplier interface from new instance to get instance~~
+- [Done] Implement setting up the routing map in the App class.
