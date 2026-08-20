@@ -50,6 +50,7 @@ expected result, actual result, pass/fail
 - Implement the controller that parse JSON and get the HttpExchange instance.
 - Move the mapping DTO logic from Service layer to Controller layer.
 - ~~Implement request body field in RequestDTO record class.~~
-- [Done] Change controllers to singleton.
+- ~~[Done] Change controllers to singleton.~~
 - [Done] Change DI from Dispatcher to controllers in App class.
-- Change the logic of the suplier interface from new instance to get instance
+- ~~Change the logic of the supplier interface from new instance to get instance~~
+- [Done] Implement setting up the routing map in the App class.

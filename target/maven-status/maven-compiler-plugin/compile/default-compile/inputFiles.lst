@@ -9,6 +9,7 @@
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/controller/UniversalHandler.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/model/RequestDTO.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/model/ResponseDTO.java
+/home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/model/StudentBodyDTO.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/model/Validator.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/repository/ConcreteRepository.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/repository/Executor.java

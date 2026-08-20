@@ -28,6 +28,7 @@ public class App {
         Dispatcher dispatcher = new Dispatcher(service);
         StudentsController studentsController = new StudentsController(service);
 
+        // set up routing map here
         Router routingTable = Router.getInstance();
         routingTable.addRoute("/students", () -> studentsController);
 

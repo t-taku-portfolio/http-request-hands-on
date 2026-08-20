@@ -15,3 +15,4 @@ io/github/t_taku_portfolio/repository/ConcreteRepository.class
 io/github/t_taku_portfolio/controller/Router.class
 io/github/t_taku_portfolio/repository/Repository.class
 io/github/t_taku_portfolio/controller/StudentsController.class
+io/github/t_taku_portfolio/model/StudentBodyDTO.class
