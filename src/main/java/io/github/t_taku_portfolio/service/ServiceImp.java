@@ -11,4 +11,10 @@ public class ServiceImp {
 
     public void doSomething(){
     }
+
+    void saveStudent(){}
+
+    StudentBodyDTO readStudent(){
+        return null;
+    }
 }
