@@ -5,6 +5,7 @@ import io.github.t_taku_portfolio.controller.*;
 import io.github.t_taku_portfolio.repository.ConcreteRepository;
 import io.github.t_taku_portfolio.service.ConcreteService;
 import io.github.t_taku_portfolio.service.Service;
+import io.github.t_taku_portfolio.service.ServiceImp;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -21,11 +22,12 @@ public class App {
 
         // service layer
         Service service = new ConcreteService(repository);
+        ServiceImp serviceImp = new ServiceImp();
 
         // controller layer
         // MyHandler studentsHandler = new MyHandler(service);
         Dispatcher dispatcher = new Dispatcher(service);
-        StudentsController studentsController = new StudentsController(service);
+        StudentsController studentsController = new StudentsController(serviceImp);
 
         // set up routing map here
         Router routingTable = Router.getInstance();

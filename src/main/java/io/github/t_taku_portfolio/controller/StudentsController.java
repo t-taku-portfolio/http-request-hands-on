@@ -3,21 +3,17 @@ package io.github.t_taku_portfolio.controller;
 import com.sun.net.httpserver.HttpExchange;
 import io.github.t_taku_portfolio.model.RequestDTO;
 import io.github.t_taku_portfolio.model.StudentBodyDTO;
-import io.github.t_taku_portfolio.service.Service;
+import io.github.t_taku_portfolio.service.ServiceImp;
 import tools.jackson.core.JacksonException;
 import tools.jackson.databind.ObjectMapper;
-import tools.jackson.databind.json.JsonMapper;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
-import java.util.Map;
 
 public class StudentsController implements Controller {
-    private final Service service;
+    private final ServiceImp service;
 
-    public StudentsController(Service theService) {
+    public StudentsController(ServiceImp theService) {
         this.service = theService;
     }
 
@@ -32,11 +28,16 @@ public class StudentsController implements Controller {
         // extract the request body as a JSON file using Jackson library
         try {
             StudentBodyDTO dto = objectMapper.readValue(httpExchange.getRequestBody(), StudentBodyDTO.class);
+            service.setStudentBodyDTO(dto);
+            service.doSomething();
+
+
         } catch (JacksonException e) {
             System.err.println("JacksonException: " + e.getMessage());
 
             // send an error message
-            Map<String, String> responseBody = Map.of("Content-Type", "application/json");
+            // Map<String, String> responseBody = Map.of("Content-Type", "application/json");
+            String responseBody = "400: Invalid request";
             httpExchange.getResponseHeaders().set("Content-Type", "application/json");
             httpExchange.sendResponseHeaders(400, objectMapper.writeValueAsString(responseBody).length());
 
