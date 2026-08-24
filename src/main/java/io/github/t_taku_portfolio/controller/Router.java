@@ -16,6 +16,7 @@ public class Router {
         // the controller name is sample
         // need to rename the corresponding controller name
         // routingTable.put("/students", StudentsController::new);
+        System.out.println("in constructor: " + getClass().getSimpleName());
     }
 
     public static Router getInstance() {
