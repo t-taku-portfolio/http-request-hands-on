@@ -14,6 +14,7 @@ public class StudentsController implements Controller {
     private final ServiceImp service;
 
     public StudentsController(ServiceImp theService) {
+        System.out.println("in constructor: StudentsController");
         this.service = theService;
     }
 
