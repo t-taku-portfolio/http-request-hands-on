@@ -33,19 +33,12 @@ public class Dispatcher implements HttpHandler {
         );
 
         // dispatch the exchange to contexts based on the path
-        boolean isStatusOk;
 
         Optional<Supplier<Controller>> optional = router.resolve(dto.path());
         if(optional.isPresent()) {
 
-            statusCode = 200;
-
             // invoke the handle method of controller
             optional.get().get().handle(exchange);
-
-            // If the client requests JSON, response students JSON
-            responseBuilder.append(service.getJson());
-            contentType = "application/json";
         } else {
 
             statusCode = 404;
