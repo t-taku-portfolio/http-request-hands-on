@@ -3,6 +3,7 @@ io/github/t_taku_portfolio/model/RequestDTO.class
 io/github/t_taku_portfolio/controller/JsonUtil.class
 io/github/t_taku_portfolio/App.class
 io/github/t_taku_portfolio/model/Validator.class
+io/github/t_taku_portfolio/service/ServiceImp.class
 io/github/t_taku_portfolio/controller/MyHandler.class
 io/github/t_taku_portfolio/model/ResponseDTO.class
 io/github/t_taku_portfolio/controller/Controller.class

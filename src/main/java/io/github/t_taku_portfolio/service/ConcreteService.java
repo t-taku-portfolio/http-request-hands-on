@@ -3,6 +3,7 @@ package io.github.t_taku_portfolio.service;
 import io.github.t_taku_portfolio.model.RequestDTO;
 import io.github.t_taku_portfolio.repository.ConcreteRepository;
 
+@Deprecated
 public class ConcreteService implements Service{
     private RequestDTO dto;
     private ConcreteRepository repository;
