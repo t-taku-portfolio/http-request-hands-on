@@ -41,8 +41,8 @@ public class Dispatcher implements HttpHandler {
             optional.get().get().handle(exchange);
         } else {
 
-            statusCode = 404;
-            responseBuilder.append("The requested URL doesn't exist.");
+            statusCode = 500;
+            responseBuilder.append("Internal Server Error\n.");
             contentType = "text/plain";
 
             ResponseContext responseContext = new ResponseContext(exchange, dto);

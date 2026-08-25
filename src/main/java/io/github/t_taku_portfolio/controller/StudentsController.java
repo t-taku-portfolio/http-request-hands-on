@@ -9,6 +9,7 @@ import tools.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
 
 public class StudentsController implements Controller {
     private final ServiceImp service;
@@ -32,6 +33,14 @@ public class StudentsController implements Controller {
             service.setStudentBodyDTO(dto);
             service.doSomething();
 
+            String responseBody = "200: Request Successful";
+            httpExchange.getResponseHeaders().set("Content-Type", "text/plain");
+            httpExchange.sendResponseHeaders(200, responseBody.length());
+
+            try (OutputStream os = httpExchange.getResponseBody()) {
+                os.write(responseBody.getBytes(StandardCharsets.UTF_8));
+            }
+
 
         } catch (JacksonException e) {
             System.err.println("JacksonException: " + e.getMessage());
@@ -40,10 +49,10 @@ public class StudentsController implements Controller {
             // Map<String, String> responseBody = Map.of("Content-Type", "application/json");
             String responseBody = "400: Invalid request";
             httpExchange.getResponseHeaders().set("Content-Type", "application/json");
-            httpExchange.sendResponseHeaders(400, objectMapper.writeValueAsString(responseBody).length());
+            httpExchange.sendResponseHeaders(400, responseBody.length());
 
             try(OutputStream os = httpExchange.getResponseBody()) {
-                os.write(objectMapper.writeValueAsBytes(responseBody));
+                os.write(responseBody.getBytes(StandardCharsets.UTF_8));
             }
         }
 
