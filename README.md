@@ -5,7 +5,7 @@ This project is under development.
 
 
 ## Features
-- Accept HTTP Request
+- Built on [JDK's built-in HTTP server](https://docs.oracle.com/en/java/javase/25/docs/api/jdk.httpserver/com/sun/net/httpserver/package-summary.html)
 - Send back simple HTTP Response
 - Listen loopback address on port 8080
 - Validate Path and the information of students
