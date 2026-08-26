@@ -21,7 +21,6 @@ public class JDBCExecutor {
         try (Connection connection = DriverManager.getConnection(dbPath,username,password);
              PreparedStatement preparedStatement = connection.prepareStatement(SQLStatement.INSERT)
         ) {
-            connection.setAutoCommit(false);
             preparedStatement.setString(1, name);
             preparedStatement.setInt(2, year);
 
