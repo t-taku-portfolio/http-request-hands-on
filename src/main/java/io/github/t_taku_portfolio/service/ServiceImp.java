@@ -9,6 +9,7 @@ public class ServiceImp {
 
     public ServiceImp(ConcreteRepository concreteRepository) {
         this.concreteRepository = concreteRepository;
+        System.out.println("in constructor: " + getClass().getSimpleName());
     }
 
     public void setStudentBodyDTO(StudentBodyDTO studentBodyDTO) {
