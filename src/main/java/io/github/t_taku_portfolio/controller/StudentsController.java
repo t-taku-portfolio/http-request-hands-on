@@ -55,14 +55,6 @@ public class StudentsController implements Controller {
                 os.write(responseBody.getBytes(StandardCharsets.UTF_8));
             }
         }
-
-
-        // store the data from client into DTO
-        RequestDTO dto1 = new RequestDTO(
-                "method",
-                "contentType",
-                "path"
-        );
     }
 
     private static ObjectMapper getInstance() {

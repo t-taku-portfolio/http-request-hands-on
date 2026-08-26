@@ -25,6 +25,7 @@ This project is under development.
 - Database's pass (not implemented yet)
 
 ## Testing
+### not implemented
 - Implement later. Each test must include input, 
 expected result, actual result, pass/fail
 - 3 normal cases
