@@ -15,6 +15,10 @@ public class JDBCExecutor {
         this.dbPath = System.getenv("DB_DIR");
         this.username = System.getenv("DB_USER");
         this.password = System.getenv("DB_PASSWORD");
+
+        if (this.dbPath == null || this.username == null || this.password == null) {
+            throw new IllegalStateException("Environment variables missing");
+        }
     }
 
     public int query(String name, int year) throws SQLException {
