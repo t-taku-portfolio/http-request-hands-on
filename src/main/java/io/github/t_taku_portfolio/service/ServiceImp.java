@@ -7,9 +7,12 @@ public class ServiceImp {
     StudentBodyDTO studentBodyDTO;
     ConcreteRepository concreteRepository;
 
+    public ServiceImp(ConcreteRepository concreteRepository) {
+        this.concreteRepository = concreteRepository;
+    }
+
     public void setStudentBodyDTO(StudentBodyDTO studentBodyDTO) {
         this.studentBodyDTO = studentBodyDTO;
-
     }
 
     public void doSomething(){

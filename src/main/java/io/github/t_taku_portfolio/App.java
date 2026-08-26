@@ -22,7 +22,7 @@ public class App {
 
         // service layer
         Service service = new ConcreteService(repository);
-        ServiceImp serviceImp = new ServiceImp();
+        ServiceImp serviceImp = new ServiceImp(repository);
 
         // controller layer
         // MyHandler studentsHandler = new MyHandler(service);
