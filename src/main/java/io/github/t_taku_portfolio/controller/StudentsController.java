@@ -1,7 +1,6 @@
 package io.github.t_taku_portfolio.controller;
 
 import com.sun.net.httpserver.HttpExchange;
-import io.github.t_taku_portfolio.model.RequestDTO;
 import io.github.t_taku_portfolio.model.StudentBodyDTO;
 import io.github.t_taku_portfolio.service.ServiceImp;
 import tools.jackson.core.JacksonException;
@@ -31,16 +30,23 @@ public class StudentsController implements Controller {
         try {
             StudentBodyDTO dto = objectMapper.readValue(httpExchange.getRequestBody(), StudentBodyDTO.class);
             service.setStudentBodyDTO(dto);
-            service.doSomething();
+            boolean isSaveSucceeded = service.doSomething();
 
-            String responseBody = "200: Request Successful";
-            httpExchange.getResponseHeaders().set("Content-Type", "text/plain");
-            httpExchange.sendResponseHeaders(200, responseBody.length());
+            // need to check the result of save student here
+            String responseBody;
+            if(isSaveSucceeded) {
+                responseBody = "200: Request Successful";
+                httpExchange.getResponseHeaders().set("Content-Type", "text/plain");
+                httpExchange.sendResponseHeaders(200, responseBody.length());
+            } else {
+                responseBody = "400: Request Failed";
+                httpExchange.getResponseHeaders().set("Content-Type", "text/plain");
+                httpExchange.sendResponseHeaders(400, responseBody.length());
+            }
 
             try (OutputStream os = httpExchange.getResponseBody()) {
                 os.write(responseBody.getBytes(StandardCharsets.UTF_8));
             }
-
 
         } catch (JacksonException e) {
             System.err.println("JacksonException: " + e.getMessage());

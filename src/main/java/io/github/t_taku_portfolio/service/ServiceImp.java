@@ -16,14 +16,18 @@ public class ServiceImp {
         this.studentBodyDTO = studentBodyDTO;
     }
 
-    public void doSomething(){
+    public boolean doSomething(){
         // toggle methods based on request method
         // currently single method only exists
-        saveStudent();
+        if(!saveStudent()) {
+            System.out.println("save failed");
+            return false;
+        }
+        return true;
     }
 
-    void saveStudent(){
-        concreteRepository.save(studentBodyDTO);
+    boolean saveStudent(){
+        return concreteRepository.save(studentBodyDTO);
     }
 
     StudentBodyDTO readStudent(){
