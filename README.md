@@ -56,4 +56,5 @@ expected result, actual result, pass/fail
 - ~~Change the logic of the supplier interface from new instance to get instance~~
 - [Done] Implement setting up the routing map in the App class.
 - Prepare mock data for the controller test.
-- Implement the Repository layer connects to PostgreSQL with JDBC.
+- [Done] Implement the Repository layer connects to PostgreSQL with JDBC.
+- Create GET endpoint.
