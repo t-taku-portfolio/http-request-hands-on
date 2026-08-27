@@ -3,8 +3,6 @@ package io.github.t_taku_portfolio;
 import com.sun.net.httpserver.HttpServer;
 import io.github.t_taku_portfolio.controller.*;
 import io.github.t_taku_portfolio.repository.ConcreteRepository;
-import io.github.t_taku_portfolio.service.ConcreteService;
-import io.github.t_taku_portfolio.service.Service;
 import io.github.t_taku_portfolio.service.ServiceImp;
 
 import java.io.IOException;
@@ -21,12 +19,12 @@ public class App {
         ConcreteRepository repository = new ConcreteRepository();
 
         // service layer
-        Service service = new ConcreteService(repository);
+        // Service service = new ConcreteService(repository);
         ServiceImp serviceImp = new ServiceImp(repository);
 
         // controller layer
         // MyHandler studentsHandler = new MyHandler(service);
-        Dispatcher dispatcher = new Dispatcher(service);
+        Dispatcher dispatcher = new Dispatcher();
         StudentsController studentsController = new StudentsController(serviceImp);
 
         // set up routing map here

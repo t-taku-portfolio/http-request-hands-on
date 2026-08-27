@@ -10,11 +10,17 @@ import java.util.Optional;
 import java.util.function.Supplier;
 
 public class Dispatcher implements HttpHandler {
-    private final Service service;
+    // private final Service service;
     private final Router router;
 
+    @Deprecated
     public Dispatcher(Service theService) {
-        this.service = theService;
+        // this.service = theService;
+        router = Router.getInstance();
+        System.out.println("in constructor: " + getClass().getSimpleName());
+    }
+
+    public Dispatcher() {
         router = Router.getInstance();
         System.out.println("in constructor: " + getClass().getSimpleName());
     }
