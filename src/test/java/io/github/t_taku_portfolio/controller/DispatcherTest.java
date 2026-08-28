@@ -1,7 +1,7 @@
 package io.github.t_taku_portfolio.controller;
 
 public class DispatcherTest {
-    public void happyPathTest(){
+    public void normalCaseTest(){
     }
 
     public void edgeCaseTest() {
