@@ -22,6 +22,7 @@ public class Dispatcher implements HttpHandler {
 
     public Dispatcher(Router theRouter) {
         this.router = theRouter;
+        System.out.println("in constructor: " + getClass().getSimpleName());
     }
 
     public Dispatcher() {
