@@ -11,6 +11,6 @@ public class DispatcherTest {
     }
 
     private static class DynamicProxy {
-        // define dynamic proxy here for mock test
+        // define dynamic proxy here for mock test if needed
     }
 }
