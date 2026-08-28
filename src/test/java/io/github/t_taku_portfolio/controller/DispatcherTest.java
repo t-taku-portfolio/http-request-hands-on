@@ -9,4 +9,8 @@ public class DispatcherTest {
 
     public void failureCaseTest() {
     }
+
+    private static class DynamicProxy {
+        // define dynamic proxy here for mock test
+    }
 }
