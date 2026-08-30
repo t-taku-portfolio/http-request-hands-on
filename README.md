@@ -11,9 +11,10 @@ This project is under development.
 - Validate Path and the information of students
 
 ## Stack
-- [Java SE25](https://www.oracle.com/java/technologies/downloads/#java21)
+- [Java 25](https://www.oracle.com/java/technologies/downloads/#java21)
 - [Apache Maven 3.9.11](https://maven.apache.org/download.cgi)
 - [Jackson-Databind](https://mvnrepository.com/artifact/tools.jackson.core/jackson-databind)
+- [Mockito-Core 5.23.0](https://mvnrepository.com/artifact/org.mockito/mockito-core)
 
 ## Architecture
 - Maven Architecture

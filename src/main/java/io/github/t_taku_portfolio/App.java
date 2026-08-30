@@ -24,12 +24,14 @@ public class App {
 
         // controller layer
         // MyHandler studentsHandler = new MyHandler(service);
-        Dispatcher dispatcher = new Dispatcher();
         StudentsController studentsController = new StudentsController(serviceImp);
 
         // set up routing map here
         Router routingTable = Router.getInstance();
         routingTable.addRoute("/students", () -> studentsController);
+
+        // set up dispatcher
+        Dispatcher dispatcher = new Dispatcher(routingTable);
 
         // set IP address to connect
         InetAddress ipAddress = InetAddress.getLoopbackAddress();
