@@ -15,6 +15,9 @@ This project is under development.
 - [Apache Maven 3.9.11](https://maven.apache.org/download.cgi)
 - [Jackson-Databind](https://mvnrepository.com/artifact/tools.jackson.core/jackson-databind)
 - [Mockito-Core 5.23.0](https://mvnrepository.com/artifact/org.mockito/mockito-core)
+- [JUnit Jupiter API 5.11.0](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api/5.11.0)
+- [JUnit Jupiter Params 5.11.0](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params)
+- [PostgreSQL JDBC Driver 42.7.13](https://mvnrepository.com/artifact/org.postgresql/postgresql/42.7.13)
 
 ## Architecture
 - Maven Architecture
