@@ -1,1 +1,4 @@
 io/github/t_taku_portfolio/AppTest.class
+io/github/t_taku_portfolio/model/StudentBodyDTOTest.class
+io/github/t_taku_portfolio/controller/DispatcherTest.class
+io/github/t_taku_portfolio/controller/DispatcherTest$DynamicProxy.class

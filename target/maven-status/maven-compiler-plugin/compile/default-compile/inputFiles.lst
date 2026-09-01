@@ -2,11 +2,9 @@
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/controller/Controller.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/controller/Dispatcher.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/controller/JsonUtil.java
-/home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/controller/MyHandler.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/controller/ResponseContext.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/controller/Router.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/controller/StudentsController.java
-/home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/controller/UniversalHandler.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/model/RequestDTO.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/model/ResponseDTO.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/model/StudentBodyDTO.java
@@ -15,6 +13,4 @@
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/repository/JDBCExecutor.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/repository/Repository.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/repository/SQLStatement.java
-/home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/service/ConcreteService.java
-/home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/service/Service.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/service/ServiceImp.java
