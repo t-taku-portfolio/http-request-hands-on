@@ -15,6 +15,9 @@ This project is under development.
 - [Apache Maven 3.9.11](https://maven.apache.org/download.cgi)
 - [Jackson-Databind](https://mvnrepository.com/artifact/tools.jackson.core/jackson-databind)
 - [Mockito-Core 5.23.0](https://mvnrepository.com/artifact/org.mockito/mockito-core)
+- [JUnit Jupiter API 5.11.0](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api/5.11.0)
+- [JUnit Jupiter Params 5.11.0](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params)
+- [PostgreSQL JDBC Driver 42.7.13](https://mvnrepository.com/artifact/org.postgresql/postgresql/42.7.13)
 
 ## Architecture
 - Maven Architecture
@@ -26,12 +29,11 @@ This project is under development.
 - Database's pass (not implemented yet)
 
 ## Testing
-### not implemented
-- Implement later. Each test must include input, 
+- Each test must include input, 
 expected result, actual result, pass/fail
-- 3 normal cases
-- 3 edge cases
-- 3 failure cases
+- [x] 3 normal cases
+- [x] 3 edge cases
+- [x] 3 failure cases
 
 ## Security Notes
 - Avoid hard-coding database path and login pass in source code.
@@ -47,15 +49,15 @@ expected result, actual result, pass/fail
 - To implement a dispatcher that creates contexts based on the request’s URI path.
 
 ## RoadMap
-- [Done] Define a controller interface
-- [Done] Modify the routing map so that the router selects a controller instance.
-- [Done] Implement the controller that parse JSON and get the HttpExchange instance.
-- [Done] Move the mapping DTO logic from Service layer to Controller layer.
-- ~~Implement request body field in RequestDTO record class.~~
-- ~~[Done] Change controllers to singleton.~~
-- [Done] Change DI from Dispatcher to controllers in App class.
-- ~~Change the logic of the supplier interface from new instance to get instance~~
-- [Done] Implement setting up the routing map in the App class.
-- Prepare mock data for the controller test.
-- [Done] Implement the Repository layer connects to PostgreSQL with JDBC.
-- Create GET endpoint.
+- [x] Define a controller interface
+- [x] Modify the routing map so that the router selects a controller instance.
+- [x] Implement the controller that parse JSON and get the HttpExchange instance.
+- [x] Move the mapping DTO logic from Service layer to Controller layer.
+- [ ] ~~Implement request body field in RequestDTO record class.~~
+- [x] ~~Change controllers to singleton.~~
+- [x] Change DI from Dispatcher to controllers in App class.
+- [ ] ~~Change the logic of the supplier interface from new instance to get instance~~
+- [x] Implement setting up the routing map in the App class.
+- [x] Prepare mock data for the controller test.
+- [x] Implement the Repository layer connects to PostgreSQL with JDBC.
+- [ ] Create GET endpoint.

@@ -33,13 +33,11 @@ public class DispatcherTest {
         Mockito.verify(mockController).handle(mockExchange);
     }
 
+    @Test
     public void edgeCaseTest() {
     }
 
+    @Test
     public void failureCaseTest() {
-    }
-
-    private static class DynamicProxy {
-        // define dynamic proxy here for mock test if needed
     }
 }
