@@ -13,6 +13,4 @@
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/repository/JDBCExecutor.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/repository/Repository.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/repository/SQLStatement.java
-/home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/service/ConcreteService.java
-/home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/service/Service.java
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/main/java/io/github/t_taku_portfolio/service/ServiceImp.java

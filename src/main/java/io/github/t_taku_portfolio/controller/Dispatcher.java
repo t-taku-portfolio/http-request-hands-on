@@ -3,7 +3,6 @@ package io.github.t_taku_portfolio.controller;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import io.github.t_taku_portfolio.model.RequestDTO;
-import io.github.t_taku_portfolio.service.Service;
 
 import java.io.IOException;
 import java.util.Optional;
@@ -13,21 +12,8 @@ public class Dispatcher implements HttpHandler {
     // private final Service service;
     private final Router router;
 
-    @Deprecated
-    public Dispatcher(Service theService) {
-        // this.service = theService;
-        router = Router.getInstance();
-        System.out.println("in constructor: " + getClass().getSimpleName());
-    }
-
     public Dispatcher(Router theRouter) {
         this.router = theRouter;
-        System.out.println("in constructor: " + getClass().getSimpleName());
-    }
-
-    @Deprecated
-    public Dispatcher() {
-        router = Router.getInstance();
         System.out.println("in constructor: " + getClass().getSimpleName());
     }
 
