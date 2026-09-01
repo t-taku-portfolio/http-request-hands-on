@@ -19,11 +19,9 @@ public class App {
         ConcreteRepository repository = new ConcreteRepository();
 
         // service layer
-        // Service service = new ConcreteService(repository);
         ServiceImp serviceImp = new ServiceImp(repository);
 
         // controller layer
-        // MyHandler studentsHandler = new MyHandler(service);
         StudentsController studentsController = new StudentsController(serviceImp);
 
         // set up routing map here
@@ -42,7 +40,6 @@ public class App {
             HttpServer server = HttpServer.create(new InetSocketAddress(ipAddress, port), backlog);
 
             //create an endpoint that accepts all paths
-            //server.createContext("/students", studentsHandler);
             server.createContext("/", dispatcher);
 
             System.out.println("*** Starting server ***");

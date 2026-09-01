@@ -1,1 +1,3 @@
 /home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/test/java/io/github/t_taku_portfolio/AppTest.java
+/home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/test/java/io/github/t_taku_portfolio/controller/DispatcherTest.java
+/home/taku02/projects/OpenRepository/Lesson64/http-request-hands-on/src/test/java/io/github/t_taku_portfolio/model/StudentBodyDTOTest.java
