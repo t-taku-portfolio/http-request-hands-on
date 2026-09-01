@@ -59,6 +59,6 @@ expected result, actual result, pass/fail
 - [Done] Change DI from Dispatcher to controllers in App class.
 - ~~Change the logic of the supplier interface from new instance to get instance~~
 - [Done] Implement setting up the routing map in the App class.
-- Prepare mock data for the controller test.
+- [Done] Prepare mock data for the controller test.
 - [Done] Implement the Repository layer connects to PostgreSQL with JDBC.
 - Create GET endpoint.
