@@ -8,8 +8,16 @@ public class StudentBodyDTOTest {
         StudentBodyDTO studentBodyDTOtest = new StudentBodyDTO(
                 "name", 4);
     }
+    @Test
+    public void edgeCase1() {
+        StudentBodyDTO studentBodyDTOtest1 = new StudentBodyDTO(
+                "name", 1
+        );
 
-    public void edgeCase() {}
+        StudentBodyDTO studentBodyDTOtest2 = new StudentBodyDTO(
+                "name", 6
+        );
+    }
 
     public void failCase() {}
 }
