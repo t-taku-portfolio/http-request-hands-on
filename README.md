@@ -32,8 +32,26 @@ This project is under development.
 - Each test must include input, 
 expected result, actual result, pass/fail
 - [x] 3 normal cases
+
+| Name | Year |
+|---|---|
+| taro | 4 |
+| hanako | 1 |
+| jiro | 2 |
 - [x] 3 edge cases
+
+| Name | Year |
+|---|---|
+| jim | 1 |
+| mike | 6 |
+| curly | 1|
 - [x] 3 failure cases
+
+| Name | Year |
+|---|---|
+| taro | -1 |
+| hanako | 7 |
+| 太郎 | 1 |
 
 ## Security Notes
 - Avoid hard-coding database path and login pass in source code.
