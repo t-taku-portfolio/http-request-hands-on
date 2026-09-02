@@ -20,15 +20,18 @@ public class StudentBodyDTOTest {
     }
 
     @Test
-    public void edgeCase1() {
+    public void edgeCase() {
         // Check if the method works with the boundary arguments
-        StudentBodyDTO studentBodyDTOtest1 = new StudentBodyDTO("jim", 1);
-        StudentBodyDTO studentBodyDTOtest2 = new StudentBodyDTO("mike", 6);
-        StudentBodyDTO studentBodyDTOtest3 = new StudentBodyDTO("curly", 1);
+        Map<String, Integer> stringIntegerMap = Map.of("jim", 1, "mike", 6, "curly", 1);
+        for (Map.Entry<String, Integer> entry : stringIntegerMap.entrySet()) {
+            StudentBodyDTO studentBodyDTO = new StudentBodyDTO(entry.getKey(), entry.getValue());
+            assertEquals(entry.getKey(), studentBodyDTO.name());
+            assertEquals(entry.getValue(), studentBodyDTO.year());
+        }
     }
 
     @Test
-    public void failCase() {
+    public void failureCase() {
         // Check if the method throws expected exception
         // Specify the expected exception and function as arguments
 
