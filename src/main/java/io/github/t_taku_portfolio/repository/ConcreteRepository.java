@@ -9,15 +9,15 @@ public class ConcreteRepository implements Repository{
     }
 
     public boolean save(StudentBodyDTO dto) {
-        int rows = 0;
+        int rowsUpdated = 0;
 
         JDBCExecutor executor = new JDBCExecutor();
         try{
-            rows = executor.query(dto.name(), dto.year());
+            rowsUpdated = executor.query(dto.name(), dto.year());
         } catch(Exception e){
             System.err.println("Error: " + e.getMessage());
         }
 
-        return rows > 0;
+        return rowsUpdated > 0;
     }
 }

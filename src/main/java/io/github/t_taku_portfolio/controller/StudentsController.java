@@ -66,10 +66,4 @@ public class StudentsController implements Controller {
     private static ObjectMapper getInstance() {
         return JsonUtil.getInstance();
     }
-
-    /*
-    public static StudentsController getInstance() {
-        return instance;
-    }
-    */
 }
